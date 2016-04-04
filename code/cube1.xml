@@ -1,0 +1,70 @@
+<Schema name="Evaluation">
+  <Cube name="Resto" visible="true" cache="true" enabled="true">
+    <Table name="Evaluation_fait">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_name" highCardinality="false" name="Names">
+      <Hierarchy name="Name" visible="true" hasAll="true">
+        <Table name="name_table">
+        </Table>
+        <Level name="Nom" visible="true" column="key_name" nameColumn="Nom" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_position" highCardinality="false" name="Localisations">
+      <Hierarchy name="Adresse" visible="true" hasAll="true" primaryKey="key_position">
+        <Table name="position_table">
+        </Table>
+        <Level name="Ville" visible="true" column="Ville" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Arrondissement" visible="true" column="Arrondissement" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_forme_juri" highCardinality="false" name="F. Juridiques">
+      <Hierarchy name="F. Juridique" visible="true" hasAll="true">
+        <Table name="forme_juri_table">
+        </Table>
+        <Level name="F. Juridique" visible="true" column="key_forme_juri" nameColumn="forme juridique" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_capital" highCardinality="false" name="Capitaux">
+      <Hierarchy name="Capital" visible="true" hasAll="true">
+        <Table name="capital_table">
+        </Table>
+        <Level name="Capital" visible="true" column="key_capital" nameColumn="capital" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_rating" highCardinality="false" name="Nb_Etablissements">
+      <Hierarchy name="Nb_Etablissement" visible="true" hasAll="true">
+        <Table name="nb_etab_table">
+        </Table>
+        <Level name="Nb_Etablissement" visible="true" column="key_nb_etab" nameColumn="nombre etabl" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" visible="true" foreignKey="key_date" highCardinality="false" name="Dates">
+      <Hierarchy name="Date" visible="true" hasAll="true" primaryKey="key_date">
+        <Table name="date_table">
+        </Table>
+        <Level name="Annees" visible="true" column="Annee" type="String" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never">
+        </Level>
+        <Level name="Mois" visible="true" column="Mois" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+        </Level>
+        <Level name="Jour" visible="true" column="Jour" type="String" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_rating" name="Ratings">
+      <Hierarchy name="Rating" visible="true" hasAll="true">
+        <Table name="rating_table" alias="">
+        </Table>
+        <Level name="Rating" visible="true" column="key_rating" nameColumn="rating" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Evaluation" column="Evaluation" datatype="Integer" aggregator="avg" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

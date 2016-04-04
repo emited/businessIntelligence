@@ -1,0 +1,46 @@
+<Schema name="New Schema5">
+  <Cube name="Surface" visible="true" cache="true" enabled="true">
+    <Table name="surface_fait">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="keynom_etal" highCardinality="false" name="Names">
+      <Hierarchy name="Name" visible="true" hasAll="true">
+        <Table name="nom">
+        </Table>
+        <Level name="Nom" visible="true" column="keynom_etal" nameColumn="nom" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="keylieu_etal" highCardinality="false" name="Localisations">
+      <Hierarchy name="Adresse" visible="true" hasAll="true">
+        <Table name="lieu">
+        </Table>
+        <Level name="Zone" visible="true" column="lieu" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Arrodissement" visible="true" column="arrondissement" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Rue" visible="true" column="Rue" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Numero" visible="true" column="Num Rue" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="keylibelle_etal" highCardinality="false" name="Libelles">
+      <Hierarchy name="Libelle" visible="true" hasAll="true">
+        <Table name="libelle">
+        </Table>
+        <Level name="Libelle" visible="true" column="keylibelle_etal" nameColumn="libelle" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="keytype_etal" highCardinality="false" name="Types">
+      <Hierarchy name="Type" visible="true" hasAll="true">
+        <Table name="type">
+        </Table>
+        <Level name="Type_Etal" visible="true" column="keytype_etal" nameColumn="type" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Surface" column="surface" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

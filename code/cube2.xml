@@ -1,0 +1,58 @@
+<Schema name="New Schema1">
+  <Cube name="Resto" visible="true" cache="true" enabled="true">
+    <Table name="Rating_fait" alias="">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_name" name="Names">
+      <Hierarchy name="Name" visible="true" hasAll="true">
+        <Table name="name_table" alias="">
+        </Table>
+        <Level name="Nom" visible="true" column="key_name" nameColumn="Nom" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_capital" name="Capitaux">
+      <Hierarchy name="Capital" visible="true" hasAll="true">
+        <Table name="capital_table">
+        </Table>
+        <Level name="Capital" visible="true" column="key_capital" nameColumn="capital" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_forme_juri" name="F. Juridiques">
+      <Hierarchy name="F. Juridique" visible="true" hasAll="true">
+        <Table name="forme_juri_table">
+        </Table>
+        <Level name="New Level 0" visible="true" column="key_forme_juri" nameColumn="forme juridique" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_nb_etab" name="Nb. Etablissements">
+      <Hierarchy name="Nb. Etablissment" visible="true" hasAll="true">
+        <Table name="nb_etab_table">
+        </Table>
+        <Level name="Nb. Etablissment" visible="true" column="key_nb_etab" nameColumn="nombre etabl" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_comment" name="Comments">
+      <Hierarchy name="Comment" visible="true" hasAll="true">
+        <Table name="comment_table">
+        </Table>
+        <Level name="Commentaire" visible="true" column="key_comment" nameColumn="comment" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="key_position" name="Localisations">
+      <Hierarchy name="Adresse" visible="true" hasAll="true" primaryKey="key_position">
+        <Table name="position_table">
+        </Table>
+        <Level name="Ville" visible="true" column="Ville" uniqueMembers="false">
+        </Level>
+        <Level name="Arrondissement" visible="true" column="Arrondissement" uniqueMembers="false">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Rating" column="rating" aggregator="avg" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

@@ -1,0 +1,1923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>shema1</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#x2f;03&#x2f;19 16&#x3a;02&#x3a;56.934</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#x2f;03&#x2f;19 16&#x3a;02&#x3a;56.934</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>sql</name>
+    <server>132.227.201.138</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>gr3</database>
+    <port>33306</port>
+    <username>gr3</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce4fe195bd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>33306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Extraction fichier inspection</from><to>Extraction annee, mois, jour</to><enabled>Y</enabled> </hop>
+  <hop> <from>Extraction des arrondissements de Paris</from><to>Extraction des arrondissements Avignon</to><enabled>Y</enabled> </hop>
+  <hop> <from>Tri lignes 2</from><to>Jointure sur SIRET</to><enabled>Y</enabled> </hop>
+  <hop> <from>Extraction des arrondissements Avignon</from><to>Tri lignes</to><enabled>Y</enabled> </hop>
+  <hop> <from>Tri lignes</from><to>Jointure sur SIRET</to><enabled>Y</enabled> </hop>
+  <hop> <from>Extraction annee, mois, jour</from><to>Extraction des arrondissements de Paris</to><enabled>Y</enabled> </hop>
+  <hop> <from>Tri lignes 3</from><to>Jointure sur Url</to><enabled>Y</enabled> </hop>
+  <hop> <from>Tri lignes 4</from><to>Jointure sur Url</to><enabled>Y</enabled> </hop>
+  <hop> <from>Jointure sur Url</from><to>Tri lignes 5</to><enabled>Y</enabled> </hop>
+  <hop> <from>Tri lignes 5</from><to>Jointure sur Nom</to><enabled>Y</enabled> </hop>
+  <hop> <from>Tri lignes 6</from><to>Jointure sur Nom</to><enabled>Y</enabled> </hop>
+  <hop> <from>Jointure sur SIRET</from><to>Tri lignes 6</to><enabled>Y</enabled> </hop>
+  <hop> <from>D&#xe9;composition Champs Url</from><to>Tri lignes 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Extraction fichier temporaire</from><to>D&#xe9;composition Champs Url 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>D&#xe9;composition Champs Url 2</from><to>Tri lignes 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Jointure sur Nom</from><to>D&#xe9;composition Champs Ville</to><enabled>Y</enabled> </hop>
+  <hop> <from>D&#xe9;composition Champs Ville</from><to>Alt&#xe9;ration structure flux</to><enabled>Y</enabled> </hop>
+  <hop> <from>Alt&#xe9;ration structure flux</from><to>Dimension Nom</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Nom</from><to>Dimension Adresse</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Adresse</from><to>Dimension Date</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Date</from><to>Dimension capital</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension capital</from><to>Dimension F. Juridique</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension F. Juridique</from><to>Dimension Nb.  Etabl</to><enabled>N</enabled> </hop>
+  <hop> <from>Ajout s&#xe9;quence</from><to>Fait Evaluation</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Nb.  Etabl</from><to>Dimension Commentaire</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Commentaire</from><to>Dimension Rating</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Rating</from><to>Ajout s&#xe9;quence</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Commentaire</from><to>Dimension Evaluation</to><enabled>N</enabled> </hop>
+  <hop> <from>Dimension Evaluation</from><to>Ajout s&#xe9;quence 2</to><enabled>N</enabled> </hop>
+  <hop> <from>Ajout s&#xe9;quence 2</from><to>Fait Rating</to><enabled>N</enabled> </hop>
+  <hop> <from>Extraction fichier Yelp.fr</from><to>D&#xe9;composition Champs Url</to><enabled>Y</enabled> </hop>
+  <hop> <from>Extraction fichier des restaurants</from><to>Tri lignes 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Alt&#xe9;ration structure flux</from><to>Alimentation fichier MS Excel</to><enabled>N</enabled> </hop>
+  </order>
+  <step>
+    <name>Ajout s&#xe9;quence</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>cle_evaluation</valuename>
+      <use_database>N</use_database>
+      <connection>sql</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1136</xloc>
+      <yloc>188</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Ajout s&#xe9;quence 2</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>cle_rating</valuename>
+      <use_database>N</use_database>
+      <connection>sql</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1167</xloc>
+      <yloc>394</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Alimentation fichier MS Excel</name>
+    <type>ExcelOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <header>N</header>
+    <footer>N</footer>
+    <encoding>UTF-8</encoding>
+    <append>N</append>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>C&#x3a;&#x5c;Users&#x5c;Massyl&#x5c;Desktop&#x5c;Datamart Evaluation</name>
+      <extention>csv</extention>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+      <create_parent_folder>N</create_parent_folder>
+      <split>N</split>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <sheetname>Sheet1</sheetname>
+      <autosizecolums>N</autosizecolums>
+      <nullisblank>N</nullisblank>
+      <protect_sheet>N</protect_sheet>
+      <password>Encrypted </password>
+      <splitevery>0</splitevery>
+      <usetempfiles>N</usetempfiles>
+      <tempdirectory/>
+      </file>
+    <template>
+      <enabled>N</enabled>
+      <append>N</append>
+      <filename>template.xls</filename>
+    </template>
+    <fields>
+      <field>
+        <name>Evaluation</name>
+        <type>Integer</type>
+        <format/>
+      </field>
+      <field>
+        <name>Nom</name>
+        <type>String</type>
+        <format/>
+      </field>
+      <field>
+        <name>Annee</name>
+        <type>Number</type>
+        <format/>
+      </field>
+      <field>
+        <name>Mois</name>
+        <type>Number</type>
+        <format/>
+      </field>
+      <field>
+        <name>Jour</name>
+        <type>Number</type>
+        <format/>
+      </field>
+      <field>
+        <name>Ville</name>
+        <type>String</type>
+        <format/>
+      </field>
+      <field>
+        <name>Arrondissement</name>
+        <type>String</type>
+        <format/>
+      </field>
+      <field>
+        <name>capital</name>
+        <type>String</type>
+        <format/>
+      </field>
+      <field>
+        <name>forme juridique</name>
+        <type>String</type>
+        <format/>
+      </field>
+      <field>
+        <name>nombre etabl</name>
+        <type>Integer</type>
+        <format/>
+      </field>
+      <field>
+        <name>rating</name>
+        <type>String</type>
+        <format/>
+      </field>
+    </fields>
+    <custom>
+    <header_font_name>arial</header_font_name>
+    <header_font_size>10</header_font_size>
+    <header_font_bold>N</header_font_bold>
+    <header_font_italic>N</header_font_italic>
+    <header_font_underline>no</header_font_underline>
+    <header_font_orientation>horizontal</header_font_orientation>
+    <header_font_color>black</header_font_color>
+    <header_background_color>none</header_background_color>
+    <header_row_height>255</header_row_height>
+    <header_alignment>left</header_alignment>
+    <header_image/>
+    <row_font_name>arial</row_font_name>
+    <row_font_size>10</row_font_size>
+    <row_font_color>black</row_font_color>
+    <row_background_color>none</row_background_color>
+      </custom>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>855</xloc>
+      <yloc>439</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Alt&#xe9;ration structure flux</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>Nom</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Ville</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Annee</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Mois</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Jour</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Arrondissement</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>capital</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>forme juridique</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nombre etabl</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>rating</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Evaluation</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>comment</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>815</xloc>
+      <yloc>318</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension Adresse</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>position_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>Ville</name>
+          <lookup>Ville</lookup>
+        </key>
+        <key>
+          <name>Arrondissement</name>
+          <lookup>Arrondissement</lookup>
+        </key>
+        <return>
+          <name>key_position</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>740</xloc>
+      <yloc>115</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension Commentaire</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>comment_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>comment</name>
+          <lookup>comment</lookup>
+        </key>
+        <return>
+          <name>key_comment</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>962</xloc>
+      <yloc>353</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension Date</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>date_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>Annee</name>
+          <lookup>Annee</lookup>
+        </key>
+        <key>
+          <name>Mois</name>
+          <lookup>Mois</lookup>
+        </key>
+        <key>
+          <name>Jour</name>
+          <lookup>Jour</lookup>
+        </key>
+        <return>
+          <name>key_date</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>827</xloc>
+      <yloc>21</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension Evaluation</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>evaluation_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>Evaluation</name>
+          <lookup>Evaluation</lookup>
+        </key>
+        <return>
+          <name>key_evaluation</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1073</xloc>
+      <yloc>382</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension F. Juridique</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>forme_juri_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>forme juridique</name>
+          <lookup>forme juridique</lookup>
+        </key>
+        <return>
+          <name>key_forme_juri</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>899</xloc>
+      <yloc>163</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension Nb.  Etabl</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>nb_etab_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>nombre etabl</name>
+          <lookup>nombre etabl</lookup>
+        </key>
+        <return>
+          <name>key_nb_etab</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>910</xloc>
+      <yloc>247</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension Nom</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>name_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>Nom</name>
+          <lookup>Nom</lookup>
+        </key>
+        <return>
+          <name>key_name</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>738</xloc>
+      <yloc>214</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension Rating</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>rating_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>rating</name>
+          <lookup>rating</lookup>
+        </key>
+        <return>
+          <name>key_rating</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1041</xloc>
+      <yloc>254</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dimension capital</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>capital_table</table>
+      <connection>sql</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>capital</name>
+          <lookup>capital</lookup>
+        </key>
+        <return>
+          <name>key_capital</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>925</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>D&#xe9;composition Champs Url</name>
+    <type>FieldSplitter</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <splitfield>rest_url</splitfield>
+   <delimiter>&#x3f;</delimiter>
+   <enclosure/>
+    <fields>      <field>        <name>Url_joint</name>
+        <id/>
+        <idrem>N</idrem>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>209</xloc>
+      <yloc>284</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>D&#xe9;composition Champs Url 2</name>
+    <type>FieldSplitter</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <splitfield>Url</splitfield>
+   <delimiter>&#x3f;</delimiter>
+   <enclosure/>
+    <fields>      <field>        <name>Url_joint</name>
+        <id/>
+        <idrem>N</idrem>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>192</xloc>
+      <yloc>414</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>D&#xe9;composition Champs Ville</name>
+    <type>FieldSplitter</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <splitfield>Libell&#xe9; commune</splitfield>
+   <delimiter> </delimiter>
+   <enclosure/>
+    <fields>      <field>        <name>Ville</name>
+        <id/>
+        <idrem>N</idrem>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>721</xloc>
+      <yloc>372</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Extraction annee, mois, jour</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>Annee</field_name>
+<formula_string>YEAR&#x28;&#x5b;Date inspection&#x5d;&#x29;</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>Mois</field_name>
+<formula_string>MONTH&#x28;&#x5b;Date inspection&#x5d;&#x29;</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>Jour</field_name>
+<formula_string>DAY&#x28;&#x5b;Date inspection&#x5d;&#x29;</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>178</xloc>
+      <yloc>4</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Extraction des arrondissements Avignon</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>Arrondissement</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>84</replace_string>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>492</xloc>
+      <yloc>72</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Extraction des arrondissements de Paris</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>Code postal</in_stream_name>
+        <out_stream_name>Arrondissement</out_stream_name>
+        <use_regex>no</use_regex>
+        <replace_string>750</replace_string>
+        <replace_by_string/>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>326</xloc>
+      <yloc>51</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Extraction fichier Yelp.fr</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>D&#x3a;&#x5c;BI&#x5c;Projet&#x5c;data&#x5c;yelp_final_test.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>id</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>author</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>24</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>author_friend_count</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>author_page</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>43</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>author_review_count</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>comment</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>2230</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>date</name>
+        <type>Date</type>
+        <format>dd&#x2f;MM&#x2f;yyyy</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>rating</name>
+        <type>Number</type>
+        <format>&#x23;.&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>rest_url</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>69</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>66</xloc>
+      <yloc>359</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Extraction fichier des restaurants</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>D&#x3a;&#x5c;BI&#x5c;Projet&#x5c;data&#x5c;siret_final_2.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>id2</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>id</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>capital</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>10</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>date creation</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>forme juridique</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>96</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>nombre etabl</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>page</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>siret</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>url</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>64</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>80</xloc>
+      <yloc>233</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Extraction fichier inspection</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>D&#x3a;&#x5c;BI&#x5c;Projet&#x5c;data&#x5c;inspections-restaurants.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>Nom</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>31</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Enseigne</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>31</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Raison sociale</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>SIRET</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Adresse</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>32</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Code postal</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Localit&#xe9;</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>9</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Code commune</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Libell&#xe9; commune</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Date inspection</name>
+        <type>Date</type>
+        <format>yyyy-MM-dd</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Coordonn&#xe9;es g&#xe9;ographiques</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>25</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Libell&#xe9; &#xe9;tablissement</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>37</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Evaluation</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>departement</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>71</xloc>
+      <yloc>76</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Extraction fichier temporaire</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>D&#x3a;&#x5c;BI&#x5c;Projet&#x5c;data&#x5c;joint.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>Nom</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>31</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Url</name>
+        <type>String</type>
+        <format/>
+        <currency>&#x20ac;</currency>
+        <decimal>,</decimal>
+        <group>&#xa0;</group>
+        <length>79</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>67</xloc>
+      <yloc>462</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Fait Evaluation</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>sql</connection>
+    <schema/>
+    <table>Evaluation_fait</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>Evaluation</column_name>
+          <stream_name>Evaluation</stream_name>
+        </field>
+        <field>
+          <column_name>key_name</column_name>
+          <stream_name>key_name</stream_name>
+        </field>
+        <field>
+          <column_name>key_position</column_name>
+          <stream_name>key_position</stream_name>
+        </field>
+        <field>
+          <column_name>key_date</column_name>
+          <stream_name>key_date</stream_name>
+        </field>
+        <field>
+          <column_name>key_capital</column_name>
+          <stream_name>key_capital</stream_name>
+        </field>
+        <field>
+          <column_name>key_forme_juri</column_name>
+          <stream_name>key_forme_juri</stream_name>
+        </field>
+        <field>
+          <column_name>key_nb_etab</column_name>
+          <stream_name>key_nb_etab</stream_name>
+        </field>
+        <field>
+          <column_name>key_rating</column_name>
+          <stream_name>key_rating</stream_name>
+        </field>
+        <field>
+          <column_name>key_comment</column_name>
+          <stream_name>key_comment</stream_name>
+        </field>
+        <field>
+          <column_name>cle_evaluation</column_name>
+          <stream_name>cle_evaluation</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1109</xloc>
+      <yloc>84</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Fait Rating</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>sql</connection>
+    <schema/>
+    <table>Rating_fait</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>rating</column_name>
+          <stream_name>rating</stream_name>
+        </field>
+        <field>
+          <column_name>key_name</column_name>
+          <stream_name>key_name</stream_name>
+        </field>
+        <field>
+          <column_name>key_position</column_name>
+          <stream_name>key_position</stream_name>
+        </field>
+        <field>
+          <column_name>key_date</column_name>
+          <stream_name>key_date</stream_name>
+        </field>
+        <field>
+          <column_name>key_capital</column_name>
+          <stream_name>key_capital</stream_name>
+        </field>
+        <field>
+          <column_name>key_forme_juri</column_name>
+          <stream_name>key_forme_juri</stream_name>
+        </field>
+        <field>
+          <column_name>key_nb_etab</column_name>
+          <stream_name>key_nb_etab</stream_name>
+        </field>
+        <field>
+          <column_name>key_comment</column_name>
+          <stream_name>key_comment</stream_name>
+        </field>
+        <field>
+          <column_name>key_evaluation</column_name>
+          <stream_name>key_evaluation</stream_name>
+        </field>
+        <field>
+          <column_name>cle_rating</column_name>
+          <stream_name>cle_rating</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1180</xloc>
+      <yloc>312</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Jointure sur Nom</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>INNER</join_type>
+<step1>Tri lignes 5</step1>
+<step2>Tri lignes 6</step2>
+    <keys_1>
+      <key>Nom</key>
+    </keys_1>
+    <keys_2>
+      <key>Nom</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>610</xloc>
+      <yloc>398</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Jointure sur SIRET</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>INNER</join_type>
+<step1>Tri lignes</step1>
+<step2>Tri lignes 2</step2>
+    <keys_1>
+      <key>SIRET</key>
+    </keys_1>
+    <keys_2>
+      <key>siret</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>575</xloc>
+      <yloc>215</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Jointure sur Url</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>INNER</join_type>
+<step1>Tri lignes 3</step1>
+<step2>Tri lignes 4</step2>
+    <keys_1>
+      <key>Url_joint</key>
+    </keys_1>
+    <keys_2>
+      <key>Url_joint</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>395</xloc>
+      <yloc>453</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Tri lignes</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>SIRET</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>603</xloc>
+      <yloc>105</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Tri lignes 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>siret</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>356</xloc>
+      <yloc>213</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Tri lignes 3</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Url_joint</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>310</xloc>
+      <yloc>313</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Tri lignes 4</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Url_joint</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>265</xloc>
+      <yloc>488</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Tri lignes 5</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Nom</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>467</xloc>
+      <yloc>374</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Tri lignes 6</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Nom</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>624</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>
